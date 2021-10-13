@@ -29,6 +29,11 @@ void changeState(int upToWhat, bool state)
         digitalWrite(LEDArray[i], LOW);
       }
     }
+
+    for (int i = 0; i > upToWhat; i++)
+    {
+      digitalWrite(LEDArray[i], LOW);
+    }
 }
 
 void loop() {
@@ -68,5 +73,4 @@ void loop() {
   {
     changeState(6, true);
   }
-  changeState(6, false);
 }
