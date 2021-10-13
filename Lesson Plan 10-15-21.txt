@@ -1,0 +1,41 @@
+Kenny may pop in here and there, but I am mainly going to be helping AJ Finish up our automatic can crusher. 
+
+What dan is going to teach:
+	
+	Teach them about arrays
+		- What they are, how you can use them, and how we WILL be using them for today. 
+	
+BLINKER ARRAY:
+	- Show them the circuit to the blinker code
+		-Show them what goes to what, the resistors, and make sure they note what pins they are leading to. 
+	-Code:
+		- Teach them how to declare an array, and tell them to write all of the pins that will be used for LEDs as it's values
+			-Make sure they do this in numerical order
+		- Tell them about index accessing, and that if they want to access the first element, they should call 0, etc.
+		- Teach them about a regular for loop, then show them the for each. 
+		- Once they have all the basics, tell them to try and write the code using what they learned last week, as well as what you just taught them. 
+
+Potentiometer Array:
+	-Teach them what a potentiometer is, they probably don't remember from last time.
+	-Show them how to wire a potentiometer.
+	
+	-Code:
+		-Teach them about analog
+		-Show them how to the array, the for loop, and the potentiometer, and make your code work.
+		-Teach them the basics with dan's code, then show them kenny's as how you should actually write it. 
+
+Sound Sensor:
+	-Show them how to wire it.
+	-Show them the sound sensor
+	-Tell them how it uses analog, and what values get passed in when
+	-Tell them why it needs digital as well
+	-Show them how to code it
+
+	-CODE:
+		
+
+IF WE GET IT DONE:
+	- Show them the progress on the automatic can crusher. 
+	- Show them how it works and stuff
+	- Let them use it!
+
