@@ -39,32 +39,32 @@ void loop() {
   {
     changeState(6, false);
   }
-  else if (x >= (1023/1) && x < (1023/2))
+  else if (x >= (1023/6) && x < (1023/6))
   {
     changeState(1, true);
   }
 
-  else if (x >= (1023/2) && x < (1023/3))
+  else if (x >= (2 * (1023/6)) && x < (1023/6))
   {
     changeState(2, true);
   }
 
-  else if (x >= (1023/3) && x < (1023/4))
+  else if (x >= (3 * (1023/6)) && x < (1023/6))
   {
     changeState(3, true);
   }
 
-  else if (x >= (1023/4) && x < (1023/5))
+  else if (x >= (4 * (1023/6)) && x < (5* (1023/6)))
   {
     changeState(4, true);
   }
 
-  else if (x >= (1023/5) && x < (1023/6))
+  else if (x >= (5 * (1023/6)) && x < 1010)
   {
     changeState(5, true);
   }
 
-  else if ( x >= 1010)
+  else if (x >= 1010)
   {
     changeState(6, true);
   }
