@@ -39,17 +39,17 @@ void loop() {
   {
     changeState(6, false);
   }
-  else if (x >= (1023/6) && x < (1023/6))
+  else if (x >= (1023/6) && x < (2 * (1023/6)))
   {
     changeState(1, true);
   }
 
-  else if (x >= (2 * (1023/6)) && x < (1023/6))
+  else if (x >= (2 * (1023/6)) && x < (3 *(1023/6)))
   {
     changeState(2, true);
   }
 
-  else if (x >= (3 * (1023/6)) && x < (1023/6))
+  else if (x >= (3 * (1023/6)) && x < (4* (1023/6)))
   {
     changeState(3, true);
   }
