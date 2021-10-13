@@ -19,14 +19,16 @@ void setup() {
 }
 
 /**
- * Changes the state of the led's in the array, up to index upToWhat, to HIGH if state is true, and low if state is false, and changes the rest of them to be LOW.
- * @param upToWhat (int):   The index of the LED in the array. (For example, 0 -> 8, 1 -> 9, 2 -> 10)
+ * Changes the state of the led's in the array, up to index index, to HIGH if state is true, and low if state is false, and changes the rest of them to be LOW.
+ * @param index (int):   The index of the LED in the array. (For example, 0 -> 8, 1 -> 9, 2 -> 10)
  * @param state    (bool):  Whether we want to have them change to on or off. true for on, false for off. 
  * 
  */
-void changeState(int upToWhat, bool state)
+void changeState(int index, bool state)
 {
-    for (int i = 0; i < upToWhat; i++)
+    //Turns on the leds up to index. 
+    //Example: if index = 2, it will turn on 0, 1, 2 LED. 
+    for (int i = 0; i < index; i++)
     {
       if (state)
       {
@@ -38,7 +40,9 @@ void changeState(int upToWhat, bool state)
       }
     }
 
-    for (int i = upToWhat; i < 7; i++)
+    //Turns off the leds WITHIN THE BOUNDS OF THE SIZE OF THE ARRAY, past the index. 
+    //Example: if index is 2, it will turn off 3, 4, 5.
+    for (int i = index; i < 7; i++)
     {
       digitalWrite(LEDArray[i], LOW);
     }
