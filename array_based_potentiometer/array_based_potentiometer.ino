@@ -64,7 +64,7 @@ void loop() {
     changeState(5, true);
   }
 
-  else
+  else if ( x >= 1010)
   {
     changeState(6, true);
   }
