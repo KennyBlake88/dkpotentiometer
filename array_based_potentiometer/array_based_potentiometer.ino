@@ -4,10 +4,10 @@
  * Version: 0.0.1
  */
 
-const int[6] LEDArray = {8, 9, 10, 11, 12, 13};
+const int LEDArray [6] = {8, 9, 10, 11, 12, 13};
 
 void setup() {
-  for (int i = 0; i < sizeof(LEDArray.length()); i++;)
+  for (int i = 0; i < sizeof(LEDArray); i++)
   {
     pinMode(i, OUTPUT);
   }
@@ -17,15 +17,15 @@ void setup() {
 
 void changeState(int upToWhat, bool state)
 {
-    for (int i = 0; i <= upToWhat; i++;)
+    for (int i = 0; i <= upToWhat; i++)
     {
       if (state)
       {
-        digitalWrite(LEDArray[i], HIGH)
+        digitalWrite(LEDArray[i], HIGH);
       }
       else
       {
-        digitalWrite(LEDArray[i], LOW)
+        digitalWrite(LEDArray[i], LOW);
       }
     }
 }
