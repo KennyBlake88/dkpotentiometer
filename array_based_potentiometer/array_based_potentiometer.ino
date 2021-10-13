@@ -17,9 +17,8 @@ void setup() {
 
 void changeState(int upToWhat, bool state)
 {
-    for (int i = 0; i <= upToWhat; i++)
+    for (int i = 0; i < upToWhat; i++)
     {
-      Serial.println(i);
       if (state)
       {
         digitalWrite(LEDArray[i], HIGH);
@@ -30,7 +29,7 @@ void changeState(int upToWhat, bool state)
       }
     }
 
-    for (int i = 0; i > upToWhat; i++)
+    for (int i = upToWhat; i < 7; i++)
     {
       digitalWrite(LEDArray[i], LOW);
     }
