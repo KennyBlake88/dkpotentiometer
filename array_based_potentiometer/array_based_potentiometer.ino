@@ -68,4 +68,5 @@ void loop() {
   {
     changeState(6, true);
   }
+  changeState(6, false);
 }
